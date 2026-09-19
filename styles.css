@@ -75,7 +75,10 @@ p { margin: 0 0 14px; }
 
 /* cards */
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
-.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+.card > img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; border-bottom: 1px solid var(--line); }
+.card-body { padding: 18px 22px 22px; }
+.card h3 { margin: 0 0 8px; }
 .card p { color: var(--muted); font-size: 0.95rem; margin: 0; }
 
 /* weapons */
